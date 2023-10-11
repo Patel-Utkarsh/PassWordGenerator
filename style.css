@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fjalla One';
+}
+
+h2{
+    font-size: 50px;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.in{
+   width: 30%;
+   height: 8%;
+}
+
+input{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 15px;
+    -webkit-box-shadow: -6px -6px 39px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -6px -6px 39px -12px rgba(0,0,0,0.75);
+    box-shadow: -6px -6px 39px -12px rgba(0,0,0,0.75);
+}
+
+.main{
+    height: 60%;
+    width: 30%;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    padding-top: 15px;
+    -webkit-box-shadow: -8px 8px 39px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 8px 39px 2px rgba(0,0,0,0.75);
+    box-shadow: -8px 8px 39px 2px rgba(0,0,0,0.75);
+}
+
+.mainHeader{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content:space-between;
+}
+
+.mainMiddle{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sld{
+    appearance: none;
+    width:100%;
+    cursor: pointer;
+    background-color: violet;
+    border-radius: 1rem;
+    height: 10px;
+    background-image: linear-gradient(violet, violet);
+    background-repeat: no-repeat;
+    border:none;
+    outline:none;
+    z-index:-1;
+}
+
+.sld::-webkit-slider-thumb {
+    position:relative;
+    z-index:1;
+    appearance: none;
+    height:2rem;
+    width:1.5rem;
+    border-radius: 5px;
+    background-color: burlywood;
+    cursor:pointer;
+    margin-top: -3px;
+    box-shadow: 0px 0px 20px 0px rgba(255, 229, 61, 0.50);
+    transition: all 100ms ease-in;
+}
+
+.sld:focus{
+    outline: 3px solid yellow;
+}
+
+.sldr::-webkit-slider-thumb:hover{
+    outline: 2px solid yellow;
+    background-color: violet;
+    box-shadow: 0px 0px 25px 5px rgba(255, 229, 61, 0.80);
+}
+
+label{
+    font-family: 'Lilita One';
+    font-size: 20px;
+}
+
+.lbl, input{
+    margin-top: 3px;
+}
+
+#pl, #pm{
+    font-family: 'Lilita One';
+    font-size: 22px;
+}
+
+#pl{
+    color: skyblue;
+}
+
+.lb1{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    color : #b68ff7;
+    display: flex;
+    gap: 15px;
+}
+
+#UC,#LC,#IN,#IS{
+    width: 10%;
+}
+
+input[type = 'checkbox']{
+    width: 10%;
+    appearance: none;
+    height: 17px;
+
+
+    background-color: transparent;
+    border: 1px solid cyan;
+    border-radius: 0.35rem;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+input[type = 'checkbox']:checked {
+    background-color: aqua;
+}
+
+input[type = 'checkbox']:checked::before {
+    position: absolute;
+    content: '✔';
+    font-size: 25px;
+    transform: translateY(-30%);
+  
+
+    
+}
+
+.rng{
+
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+.mainFooter{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#str{
+    font-family: 'Lilita One';
+    font-size: 22px;
+    color: orange;
+   
+}
+
+.copied{
+    scale: 0;
+    position: absolute;
+    right: -125px;
+    top: 5px;
+
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    transition:ease 1s;
+    
+}
+#cypied{
+    padding-top: 10px;
+    font-family: 'Lilita One' ;
+    color: lawngreen;
+}
+
+
+
+
+.circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: red;
+    margin-top: 5px;
+    
+}
+
+.in{
+    position: relative;
+}
+
+.cpy-btn{
+    position: absolute;
+    right: 0;
+    background: transparent;
+    border: transparent;
+    margin-right: 10px;
+    padding-top: 5px;
+    cursor: pointer;
+
+    
+
+}
+
+
+.btn{
+    
+    font-family: 'Lilita One';
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #5865f2;
+    color: white;
+    
+    
+}
+
+.btn:hover{
+    background-color: greenyellow;
+}
+
+.btn-class{
+    width: 80%;
+    height: 14%;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 15px;
+  
+
+
+}
+
+#pm{
+    color: yellow;
+}
+
+.ezy{
+    font-family: 'Gabarito';
+    font-size: 25px;
+    color: white;
+    padding-left: 15px;
+  
+}
+
+::placeholder{
+    padding-left: 10px;
+    font-family: 'Lilita One' ;
+}
+
+
+.cpm{
+       
+       
+    scale: 0;
+ 
+}
+
+
+@media (max-width: 768px) {
+   
+
+    .cpm{
+       
+       
+        
+        padding-top: 10px;
+        margin: 0 auto;
+        margin-top: -150px;
+      
+    
+        height: 40px;
+        width: 100px;
+        background-color: black;
+        color: greenyellow;
+        border-radius: 20px;
+        text-align: center;
+        transition:ease 1s;
+    }
+
+    h2 {
+        margin-top: -150px;
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .wrapper {
+        gap: 5px;
+    }
+
+    .in {
+        width: 80%;
+       
+    }
+
+    .main {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    }
+
+    .btn{
+        font-size: 25px;
+    }
+
+    .sld{
+        height: 20px;
+    }
+
+    .mainMiddle{
+        gap:10px;
+    }
+
+    #pl,#pm{
+        font-size: 30px;
+    }
+
+    label{
+        font-size: 25px;
+    }
+
+    .circle{
+        height: 30px;
+        width: 30px;
+    }
+
+    .btn{
+        margin-top: -10px;
+    }
+
+    .btn:hover{
+        background-color:  #5865f2 ;
+
+    }
+
+    #str{
+        font-size: 30px;
+    }
+
+
+    .sld {
+        width: 100%;
+    }
+
+    .sld::-webkit-slider-thumb {
+        
+        height: 3rem;
+        width: 1.8rem;
+        border-radius: 5px;
+       
+    }
+
+    .cpy-btn{
+        top:15%;
+    }
+
+    .mainFooter{
+        margin-top: -5px;
+    }
+
+    .mainHeader{
+        margin-top: -10px;
+    }
+}

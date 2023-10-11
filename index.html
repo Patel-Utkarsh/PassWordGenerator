@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Fjalla One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lilita One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Gabarito' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+       <h2>Password Generator</h2>
+       <div class="in">
+        <input type="text" class="ezy" placeholder="Password" display-pass readonly>
+        <button class="cpy-btn">
+
+            <img src="notes.png" height="35px" id="cpy">
+
+        </button>
+
+        
+        <div class="copied">
+            <p id="cypied">Copied</p>
+        </div>
+        
+       </div>
+       <div class="main">
+             <div class="mainHeader">
+                <p id="pl">Password Length</p>
+                <p id="pm">0</p>
+            </div>
+
+            <div class="rng">
+                <input type="range" min="1" max="20" step="1" class="sld" slider>
+            </div>
+
+            <div class="mainMiddle">
+                <div class="lb1">
+                    <input type="checkbox" class="cb" name="" id="UC">
+                    <label for="UC">Include Uppercase Letters</label>
+
+                </div>
+
+                <div class="lb1">
+                    <input type="checkbox" class="cb" id="LC">
+                    <label for="LC">Include Lowercase Letters</label>
+
+                </div>
+
+                <div class="lb1">
+                    <input type="checkbox" class="cb" id="IN">
+                    <label for="IN">Include Numbers</label>
+
+                </div>
+
+                <div class="lb1">
+                    <input type="checkbox" class="cb" id="IS">
+                    <label for="IS">Include Symbols</label>
+
+                </div>
+
+
+            </div>
+
+            <div class="mainFooter">
+                <p id="str">Strength</p>
+                <div class="circle"></div>
+            </div>
+
+            <div class="btn-class">
+                <button class="btn">
+                    Generate Password
+                </button>
+                
+            </div>
+            
+            
+
+
+
+
+       </div>
+
+
+    </div>
+
+    <div class="cpm">
+        <p id="cy">Copied</p>
+        </div>
+
+   
+
+   <script src="script.js"></script> 
+</body>
+</html>
